@@ -24,6 +24,7 @@ exports.getCarSingle = async(req,res) => {
 
 exports.addCar = async(req,res) => {
     try{
+        console.log(req.body);
         const car = new Car(req.body)
         return car.save()
     }catch(err){

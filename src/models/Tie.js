@@ -5,7 +5,7 @@ const tieSchema  = new mongoose.Schema({
     avatar:String,
     timeStamp:Number,
     content:String,
-    title:String
+    title:String,
 })
 
 module.exports = mongoose.model('Tie', tieSchema)
